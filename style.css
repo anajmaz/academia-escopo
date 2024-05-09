@@ -1,0 +1,266 @@
+/* Estilo básico e tema de cores */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #333; /* Cinza escuro */
+  color: #fff; /* Branco */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000; /* Preto */
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f00; /* Vermelho */
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #f00; /* Vermelho */
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c00;
+}
+
+.profissional {
+  margin-bottom: 20px;
+}
+
+.profissional img {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.daily-tip,
+.events-calendar {
+  margin-top: 20px;
+}
+
+#calendar {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  padding: 10px;
+  background-color: #444;
+  cursor: pointer;
+  position: relative;
+}
+
+.day:hover .event {
+  display: block;
+}
+
+.logo img {
+  max-width: 70px;
+  height: auto;
+}
+#calendar {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  padding: 10px;
+  background-color: #444;
+  cursor: pointer;
+  position: relative; /* Estabelece um contexto de empilhamento para os descendentes */
+  z-index: 1; /* Nível básico para cada dia */
+}
+
+.event {
+  display: none;
+  position: absolute;
+  background-color: #f00;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  left: 50%; /* Centraliza o evento */
+  transform: translateX(-50%);
+  bottom: 100%;
+  z-index: 10;
+  white-space: nowrap;
+  border: 1px solid #fff;
+}
+
+.day:hover .event {
+  display: block;
+}
+#calendar {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day {
+  padding: 10px;
+  background-color: #444;
+  cursor: pointer;
+  position: relative; /* Estabelece um contexto de empilhamento para os descendentes */
+  z-index: 1; /* Nível básico para cada dia */
+}
+
+.event {
+  display: none;
+  position: absolute;
+  background-color: #f00;
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  left: 50%; /* Centraliza o evento */
+  transform: translateX(-50%); /* Ajuste fino para centralização */
+  bottom: 100%; /* Posiciona acima do dia */
+  z-index: 10; /* Garante que está acima do contexto do dia */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  border: 1px solid #fff; /* Adiciona contraste para visibilidade */
+}
+
+.day:hover .event {
+  display: block;
+}
+.logo img {
+  max-height: 80px; /* Limita a altura da logo */
+  max-width: 100%; /* Garante que a largura não exceda a largura do contêiner */
+  object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+}
+.logo img {
+  max-height: 80px; /* Limita a altura da logo */
+  max-width: 100%; /* Garante que a largura não exceda a largura do contêiner */
+  object-fit: contain; /* Mantém a proporção da imagem sem cortá-la */
+}
+.form-group {
+  margin-bottom: 20px; /* Espaço entre cada grupo de formulário */
+}
+
+label {
+  display: block; /* Faz com que cada label ocupe uma linha inteira */
+  margin-bottom: 5px; /* Espaço entre o label e o campo de entrada correspondente */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 40%; /* Faz com que os campos de entrada ocupem toda a largura disponível */
+  padding: 10px; /* Padding para melhorar a legibilidade */
+  box-sizing: border-box; /* Garante que a largura inclua padding e bordas */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c00;
+}
